@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoe Store - Purchase</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' }); 
+        }
+      }
+  </script> 
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#" class="active">Purchase</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+    <div class="content">
+  <h1>Explore Our Shoe Collection</h1>
+  <div class="shoe-grid">
+    <!-- Repeat the following block for each shoe -->
+  <div class="shoe">
+  <div class="shoe-thumbnail">
+    <img src="images/sb dunk.png" alt="Shoe 1" style="cursor: pointer;" onclick="scrollToSection('SBDunk')">
+    <h3>SB Dunk</h3>
+  </div>
+ <!-- <div class="shoe-details">
+    <p>desc</p>
+  </div>-->
+</div>
+
+<div class="shoe">
+  <div class="shoe-thumbnail">
+    <img src="images/Air Jordan 1.png" alt="Shoe 1" style="cursor: pointer;" onclick="window.location.href = 'jordan_1.html';">
+    <h3>Air Jordan 1</h3>
+  </div>
+<!--  <div class="shoe-details">
+    <p>Slip into sneaker heaven with the Air Jordan 1s. The plush, padded collar hugs your ankle in the softest embrace, while the pillowy insole and cloud-like cushioning create a weightless walking-on-air feel. The premium leather upper wraps your foot in supple quality and a perfect fit so snug you'll forget you're wearing shoes. Whether strolling down the street or hitting the blacktop, the iconic high-top design delivers blissful comfort and timeless style with each step. The Air Jordan 1s - Kicks redefined by luxurious comfort.</p>
+  </div>-->
+</div>
+
+    <div class="shoe">
+  <div class="shoe-thumbnail">
+    <img src="images/air jordan 4.png" alt="Shoe 1" style="cursor: pointer;" onclick="scrollToSection('AirJordan4')">
+    <h3>Air Jordan 4</h3>
+  </div>
+ <!-- <div class="shoe-details">
+    <p>desc</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>-->
+</div>
+
+    <div class="shoe">
+  <div class="shoe-thumbnail">
+    <p><br></p>
+    <img src="images/jordan_low.png" alt="Shoe 1" style="cursor: pointer;" onclick="window.location.href = 'jordan_low.html';">
+    <h3><br>Air Jordan 1 Low</h3>
+  </div>
+<!--<div class="shoe-details">
+    <p>desc</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>-->
+</div>
+    
+    <div class="shoe">
+  <div class="shoe-thumbnail">
+    <img src="images/hook.png" alt="Shoe 1" style="cursor: pointer;" onclick="scrollToSection('AirForce1')">
+    <h3>Air Force 1</h3>
+  </div>
+<!--  <div class="shoe-details">
+    <p>desc</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>-->
+</div>
+   
+    <div class="shoe">
+  <div class="shoe-thumbnail">
+    <img src="images/air max.png" alt="Shoe 1" style="cursor: pointer;" onclick="scrollToSection('AirMax')">
+    <h3>Air Max</h3>
+  </div>
+<!--  <div class="shoe-details">
+    <p>desc</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>-->
+</div>
+
+    <div class="shoe">
+  <div class="shoe-thumbnail">
+    <img src="images/ultra_boost.png" alt="Shoe 1" style="cursor: pointer;" onclick="scrollToSection('UltraBoost')">
+    <h3>Ultraboost</h3>
+  </div>
+<!--  <div class="shoe-details">
+    <p>desc</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>-->
+</div>
+
+    <div class="shoe">
+  <div class="shoe-thumbnail">
+    <img src="images/yeezys.png" alt="Shoe 1" style="cursor: pointer;" onclick="scrollToSection('Yeezy')">
+    <h3>Yeezy</h3>
+  </div>
+<!--  <div class="shoe-details">
+    <p>desc</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>-->
+</div>
+
+<br>
+    
+<!-- divs for each collection
+    
+<div class= "shoe-collections">
+  <div id="SBDunk">
+    <section>
+      <h3 class="shoe-collections">SB Dunk Collection</h3>
+    </section>
+  </div>
+  
+  <br>
+      
+  <div id="AirJordan1">
+    <section>
+      <h3 class="shoe-collections">Air Jordan 1 Collection</h3>
+    </section>
+  </div>
+
+  <br>
+  
+  <div id="AirJordan4">
+    <section>
+      <h3 class="shoe-collections">Air Jordan 4 Collection</h3>
+    </section>
+  </div>
+
+  <br>
+
+  <div id="AirJordan1Low">
+    <section>
+      <h3 class="shoe-collections">Air Jordan 1 Low Collection</h3>
+    </section>
+  </div>
+
+  <br>
+
+  <div id="AirForce1">
+    <section>
+      <h3 class="shoe-collections">Air Force 1 Collection</h3>
+    </section>
+  </div>
+
+  <br>
+
+  <div id="AirMax">
+    <section>
+      <h3 class="shoe-collections">Air Max Collection</h3>
+    </section>
+  </div>
+
+  <br>
+
+  <div id="UltraBoost">
+    <section>
+      <h3 class="shoe-collections">Ultra Boost Collection</h3>
+    </section>
+  </div>
+
+  <br>
+  
+  <div id="Yeezy">
+    <section>
+      <h3 class="shoe-collections">Yeezy Collection</h3>
+    </section>
+  </div>
+   -->
+
+    <div class="contactinfo">
+      <h3>             To purchase shoes from us, contact us using the information provided in the contact page! Thank you for shopping with Top Soles!</h3>
+    </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+

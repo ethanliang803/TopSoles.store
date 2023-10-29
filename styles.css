@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold');
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333; 
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar a {
+     color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  .navbar a.active {
+    background-color: #666;
+  }
+  
+  .content {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+
+  .ethan {
+
+    font-size: 14px; /* Adjust the font size as needed */
+    margin-top: 5px; /* Add some space above the text for separation */
+    color: #959191; /* Text color */
+    font-style: italic;
+
+  }
+  
+  h1 {
+    color: #12dfe2;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .shoe-collections {
+  color: #18226d;
+  }
+
+#hook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh; /* Adjust the height to your preference */
+  background-color: #1a1a1a;
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.logo {
+  max-width: 80%; /* Adjust the size of the logo */
+  height: auto;
+}
+
+/* Existing styles */
+
+
+.logo-container {
+  text-align: center;
+  margin-top: 80px;
+  padding-bottom: 30px;
+}
+
+
+
+/* Existing styles */
+
+.motto-container {
+  text-align: center;
+  padding-bottom: 20px;
+  /*max-width: 600px;*/
+  margin: 0 auto;
+}
+
+.motto {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 48px; /* Decrease font size for better two-line appearance */
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2), 6px 6px 0px rgba(0, 0, 0, 0.2), 8px 8px 0px rgba(0, 0, 0, 0.2), 10px 10px 0px rgba(0, 0, 0, 0.2);
+  line-height: 1.2; /* Add line height to separate the lines */
+}
+
+/* Update the .shop-button styles */
+.shop-button {
+  max-width: 250 px;
+  display: block; /* Make the button a block-level element */
+  margin: 0 auto; /* Center the button */
+  padding: 20px 40px; /* Adjust padding for button size */
+  background-color: #12dfe2;
+  color: white;
+  font-size: 44px; /* Decrease font size for better button appearance */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.shop-button:hover {
+  background-color: #0ca5a9;
+}
+
+
+.shoe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  overflow-x: auto;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.shoe {
+  text-align: center;
+}
+
+.shoe img {
+  max-width: 100%;
+}
+
+.shoe {
+  position: relative;
+}
+
+.shoe-thumbnail:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.shoe:hover .shoe-details {
+  display: block;
+}
+
+
+.shoe-thumbnail {
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Set a consistent height for all shoe thumbnails */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /*cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative; 
+  width: 200px;
+  height: 200px;*/
+}
+
+.shoe-thumbnail img {
+  max-width: 100%;
+  max-height: 100%; /* Make sure the image fits within the container */
+  height: auto; /* Let the image maintain its aspect ratio */
+}
+
+/*.shoe-details {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  width: 100%;
+  padding: 10px;
+  bottom: 100%; 
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}*/
+
+
+/* styles.css */
+
+.slideshow-container {
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Adjust the height to your preference */
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.image-box {
+  width: 400px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+ /* border: 2px solid #ccc;  Add border if desired */
+}
+
+.image-box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.about-header {
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.about-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.about-text {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 800px; /* Adjust max-width as needed */
+}
+
+.about-text p {
+  line-height: 1.9;
+  color: white; /* Adjust text color */
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contactinfo{
+  text-align: center;
+  font-size:25px;
+  font-weight: bold;
+}
+
+
